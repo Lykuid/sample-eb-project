@@ -1,8 +1,12 @@
 # Platform
 
-At Lykuid we needed a mechanism to ingest customer data. It had to provide high availability and complete isolation, so customers are not impacted by possible downtime, service upgrades, or bugs introduced from other components. For this we need an isolated service which is simple and robust.
+At Lykuid we needed a mechanism to ingest customer data. It had to provide high availability and complete isolation, 
+so customers are not impacted by possible downtime, service upgrades, or bugs introduced from other components. 
+For this we need an isolated service which is simple and robust.
 
-For this use case, we selected Amazon’s Elastic Beanstalk with the Docker Platform and Elastic Container Registry. Elastic Beanstalk provides us with a cluster of ingestion nodes spread across availability zones with a managed platform capable of running standard docker images.
+For this use case, we selected Amazon’s Elastic Beanstalk with the Docker Platform and Elastic Container Registry.
+ Elastic Beanstalk provides us with a cluster of ingestion nodes spread across availability zones with a managed 
+ platform capable of running standard docker images.
 
 
 
