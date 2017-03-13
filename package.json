@@ -1,0 +1,14 @@
+{
+  "name": "sample-eb-project",
+  "version": "1.0.0",
+  "description": "Sample EB Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./run.js"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
