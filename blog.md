@@ -43,7 +43,8 @@ At Lykuid we needed a mechanism to ingest customer data. It had to provide high 
 so customers are not impacted by possible downtime, service upgrades, or bugs introduced from other components. 
 For this we need an isolated service which is simple and robust. 
 
-We also needed predictable response times and minimal resource constraints. the platform needed to support high concurancy without requiring a large thread or worker pool.
+We also needed predictable response times and minimal resource constraints. the platform needed to support 
+high concurrency without requiring a large thread or worker pool.
 
 For this use case, we selected Amazon’s Elastic Beanstalk with the Docker Platform and Elastic Container Registry.
  Elastic Beanstalk provides us with a cluster of ingestion nodes spread across availability zones with a managed 
