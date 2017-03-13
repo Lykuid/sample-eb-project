@@ -64,7 +64,7 @@ For this use case, we selected Amazon’s Elastic Beanstalk with the Docker Plat
  Elastic Beanstalk provides us with a cluster of ingestion nodes spread across availability zones with a managed 
  platform capable of running standard docker images.
 
-
+![Elastic Beanstalk / Docker Architecture](https://lykuid.github.io/sample-eb-project/lykuideb.svg)
 
 
 # Application
