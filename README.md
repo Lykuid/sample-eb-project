@@ -3,7 +3,7 @@
 First login to ECR with 
 
 ```bash
- aws ecr --profile tallumbrella get-login --region us-east-1
+ aws ecr get-login --region us-east-1
 
 ```
 
