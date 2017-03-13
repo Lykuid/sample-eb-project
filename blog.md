@@ -15,7 +15,7 @@ We used the node base docker image.  This allows us to select our platform from 
 
 We begin by placing a `Dockerfile` for a node project.
 
-```
+```docker
 FROM node:boron
 
 RUN mkdir -p /usr/src/app
