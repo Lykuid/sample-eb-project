@@ -13,6 +13,8 @@ For the application, we chose to develop in node. Node gives us an environment c
 
 We used the node base docker image.  This allows us to select our platform from standard docker registries independent of the platforms Elastic Beanstalk provides.
 
+We begin by placing a `Dockerfile` for a node project.
+
 ```
 FROM node:boron
 
