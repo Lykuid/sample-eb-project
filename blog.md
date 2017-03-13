@@ -1,42 +1,3 @@
-
-* Why Elastic Beanstalk?
-   * AWS Managed Updates
-   * Load Balancing
-   * Autoscaling
-   * Log Archival
-* Why Docker?
-   * Platform standardization
-   * Flexible platform deployment
-
-
-
-
-
-
-Elastic Beanstalk
-WHY 
-* Managed updates
-* Logs
-* Auto Scaling
-* Health Monitoring 
-   * Agregat 
-      * Latency 
-      * Error rate
-      * Request rate
-   * Per instance
-      * Latency
-      * Error rate
-      * Request rate
-      * Load avg
-      * CPU
-* Cloudwatch
-   * Same as health monitoring 
-   * Network in/out
-* Alarms
-
-
-
-
 # Problem
 
 At Lykuid we needed a mechanism to ingest customer data. It had to provide high availability and complete isolation, 
@@ -56,9 +17,6 @@ EB is Amazon managed and provides monitoring, auto provisioning and reduces our 
 Why Docker with EB
 
 Traditional EB deployments use Amazon Linux running Node which runs your application. This ties you to using Amazon’s Node version and configuration. By using Docker we are able to customize the Node environment and package it with our dependencies. This provides greater control over our application and doesn’t tie us to the constraints of traditional Elastic Beanstalk environments. Doing it this way also gives the flexibility to use any of the published Docker base images on Docker hub or other registries. 
-
-Composability logic. These base images can be used to create 
-
 
 For this use case, we selected Amazon’s Elastic Beanstalk with the Docker Platform and Elastic Container Registry.
  Elastic Beanstalk provides us with a cluster of ingestion nodes spread across availability zones with a managed 
