@@ -44,9 +44,10 @@ so customers are not impacted by possible downtime, service upgrades, or bugs in
 For this we need an isolated service which is simple and robust. 
 
 We also needed predictable response times and minimal resource constraints. The platform needed to support 
-high concurrency without requiring a large thread or worker pool. In order to do this we need an application in which all IO is asynchronous.
+high concurrency without requiring a large thread or worker pool. In order to do this we needed an application where all IO is asynchronous.
 
-#Solution
+# Solution
+
 
 For this use case, we selected Amazon’s Elastic Beanstalk with the Docker Platform and Elastic Container Registry.
  Elastic Beanstalk provides us with a cluster of ingestion nodes spread across availability zones with a managed 
