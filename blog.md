@@ -1,3 +1,42 @@
+
+* Why Elastic Beanstalk?
+   * AWS Managed Updates
+   * Load Balancing
+   * Autoscaling
+   * Log Archival
+* Why Docker?
+   * Platform standardization
+   * Flexible platform deployment
+
+
+
+
+
+
+Elastic Beanstalk
+WHY 
+* Managed updates
+* Logs
+* Auto Scaling
+* Health Monitoring 
+   * Agregat 
+      * Latency 
+      * Error rate
+      * Request rate
+   * Per instance
+      * Latency
+      * Error rate
+      * Request rate
+      * Load avg
+      * CPU
+* Cloudwatch
+   * Same as health monitoring 
+   * Network in/out
+* Alarms
+
+
+
+
 # Platform
 
 At Lykuid we needed a mechanism to ingest customer data. It had to provide high availability and complete isolation, 
