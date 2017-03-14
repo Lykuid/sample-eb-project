@@ -28,8 +28,6 @@ For this use case, we selected Amazon’s Elastic Beanstalk with the Docker Plat
 ![Elastic Beanstalk / Docker Architecture](https://lykuid.github.io/sample-eb-project/lykuideb.svg)
 
 
-We begin by placing a `Dockerfile` for a node project.
-
 A developer writes a `Dockerfile` which describes how to package his application into a Docker image. This allows him to build the image using the `docker build` command. He then can tag the image with `docker tag` and push to ECR using `docker push`. This image is now housed on Amazon's infrastructure and is ready to be deployed using Elastic Beanstalk. With the image on ECR, the developer is able to launch a docker Elastic Beanstalk environment and deploy his application by providing a `Dockerrun.aws.json` file. 
 
 ## Example `Dockerfile`
