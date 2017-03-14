@@ -23,7 +23,7 @@ For this use case, we selected Amazon’s Elastic Beanstalk with the Docker Plat
  
  Elastic Beanstalk provides us with deployment automation, health monitoring, log and metric collection and auto scaling. 
 
-# Elastic Beanstalk / Docker Architecture 
+## Elastic Beanstalk / Docker Architecture 
 
 ![Elastic Beanstalk / Docker Architecture](https://lykuid.github.io/sample-eb-project/lykuideb.svg)
 
