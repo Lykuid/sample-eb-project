@@ -30,7 +30,7 @@ We begin by placing a `Dockerfile` for a node project.
 
 A developer writes a `Dockerfile` which describes how to package his application into a Docker image. This allows him to build the image using the `docker build` command. He then can tag the image with `docker tag` and push to ECR using `docker push`. This image is now housed on Amazon's infrastructure and is ready to be deployed using Elastic Beanstalk. With the image on ECR, the developer is able to launch a docker Elastic Beanstalk environment and deploy his application by providing a `Dockerrun.aws.json` file. 
 
-
+## Dockerfile
 
 ```docker
 FROM node:boron
@@ -45,6 +45,33 @@ RUN npm install
 
 COPY . /usr/src/app
 
-EXPOSE 8080
+EXPOSE 3000
 CMD [ "npm", "start" ]
 ```
+
+
+## Dockerrun.aws.json 
+
+
+```json
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "392939824843.dkr.ecr.us-east-1.amazonaws.com/fake-meetings:0.1",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "3000"
+    }
+  ]
+}
+```
+
+
+
+
+
+
+
+
